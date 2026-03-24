@@ -8,11 +8,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <script>
-document.getElementById("themeToggle").addEventListener("click", () => {
-    document.body.classList.toggle("dark");
-});
+    document.addEventListener("DOMContentLoaded", () => {
+        document.getElementById("themeToggle").addEventListener("click", () => {
+            document.body.classList.toggle("dark");
+        });
+    });
 </script>
 
 
@@ -24,6 +27,7 @@ document.getElementById("themeToggle").addEventListener("click", () => {
         <div class="nav-links">
             <a href="#projects">Projects</a>
             <a href="#education">Education</a>
+            <a href="#education">Skills</a>
             <a href="#awards">Awards</a>
             <a href="#contact">Contact</a>
         </div>
@@ -39,23 +43,27 @@ document.getElementById("themeToggle").addEventListener("click", () => {
 
                 <div class="hero-grid">
                     <div class="hero-text">
-                        <h1>Hello.<br>I’m Naman.</h1>
+                        <h1>Hi, I'm Naman Agarwal</h1>
+
+                        <h2>AI/ML Enthusiast | Aspiring Software Developer</h2>
 
                         <p>
-                            Computer Science Engineering student interested in
-                            AI, Cloud Systems, and Software Engineering.
+                            I build intelligent systems using AI and scalable web applications.
+                            Currently working on real-world projects in AI, cloud, and software systems.
                         </p>
 
-                        <div class="hero-actions">
-                            <a href="resume.pdf" target="_blank" class="btn">View Resume</a>
-                            <a href="resume.pdf" download class="btn">Download Resume</a>
+                        <div class="hero-buttons">
+                            <a class="btn">View Resume</a>
+                            <a class="btn">Download Resume</a>
+                            <a class="icon-btn"><i class="fab fa-github"></i> GitHub</a>
+                            <a class="icon-btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
                         </div>
                     </div>
 
                     <div class="hero-meta">
                         <div>
                             <strong>Role</strong>
-                            <span>CSE Undergraduate</span>
+                            <span>AI/ML + Backend Developer</span>
                         </div>
                         <div>
                             <strong>Focus</strong>
@@ -105,42 +113,79 @@ document.getElementById("themeToggle").addEventListener("click", () => {
 
                 <div class="project window">
                     <h3>AI-Driven Cloud Drug Management System</h3>
-                    <p class="meta">HackMIT-WPU’25 · AWS Re’forge · Runners-up</p>
-                    <p>
-                        Cloud-based drug inventory and supply chain system using AWS.
-                        Integrated AI-based demand forecasting, IoT storage monitoring,
-                        and blockchain-backed traceability.
+
+                    <p class="meta">
+                        HackMIT-WPU’25 · AWS · System Design Project
                     </p>
+
+                    <p>
+                        Designed and proposed a <strong>Scalable cloud architecture</strong> for drug inventory & supply chain management using AWS services. Integrated data-driven insights
+                        and analytics, along with AI-based demand forecasting concepts to optimize
+                        pharmaceutical supply chains. Focused on building a real-world solution for efficient drug distribution and inventory optimization.
+                    </p>
+
+                    <p class="tech">
+                        <div class="tech-stack">
+                            <span>AWS</span>
+                            <span>S3</span>
+                            <span>Lambda</span>
+                            <span>System Design</span>
+                            <span>Machine Learning (Concept)</span>
+                        </div>
+                    </p>
+
+                    <div class="project-links">
+                        <a href="https://github.com/NamanA24/AI-driven-Drug-Management-System" target="_blank" class="project-btn">View Project</a>
+                    </div>
                 </div>
 
                 <div class="project window">
-                    <h3>Explainable AI-Based Supply Chain Analytics</h3>
-                    <p class="meta">1st Place · Intelligent Agents Track</p>
-                    <p>
-                        Built Random Forest models to predict late delivery risk and
-                        order profitability. Achieved 72.4% accuracy and 0.998 R².
-                        Implemented SHAP for transparent model explainability.
-                    </p>
-                </div>
+                    <h3>Explainable AI-Based Supply Chain Prediction</h3>
 
-                <div class="project window">
-                    <h3>Student Web Portfolio</h3>
-                    <p class="meta">Student Portfolio</p>
-                    <p>
-                        A responsive personal portfolio showcasing projects, skills, education,
-                        and achievements.
-                        <a href="javascript:void(0)" onclick="openForm()" class="demo-link">Demo</a>
+                    <p class="subtext">
+                        1st Place · Intelligent Agents Track
                     </p>
+
+                    <p>
+                        Developed a machine learning model using Random Forest to predict late delivery risks 
+                        and order profitability in supply chains. Achieved <strong>72.4% accuracy</strong> and 
+                        <strong>0.998 R²</strong>. Applied <strong>SHAP (Explainable AI)</strong> to interpret model decisions 
+                        and provide actionable business insights.
+                    </p>
+
+                    <div class="tech-stack">
+                        <span>Python</span>
+                        <span>Machine Learning</span>
+                        <span>Random Forest</span>
+                        <span>SHAP</span>
+                        <span>Data Analysis</span>
+                    </div>
+
+                    <a href="https://github.com/NamanA24/Supply-Chain-Prediction-using-Explainable-AI" 
+                        target="_blank" 
+                        class="project-btn">View Project
+                    </a>
                 </div>
 
 
                 <div class="project window">
                     <h3>All-Sky Camera System</h3>
-                    <p class="meta">Raspberry Pi · Image Processing</p>
-                    <p>
-                        Developed an automated night-sky monitoring system using Raspberry Pi 5.
-                        Implemented continuous sky imaging and data visualization pipelines.
+
+                    <p class="subtext">
+                        Raspberry Pi 
                     </p>
+
+                    <p>
+                        Developed an automated all-sky monitoring system using Raspberry Pi 5 and ZWO ASI camera for continuous night sky observation. 
+                        Designed image acquisition and processing pipelines for capturing and analyzing sky data, with applications in astronomy and environmental monitoring.
+                    </p>
+
+                    <div class="tech-stack">
+                        <span>Raspberry Pi</span>
+                        <span>Computer Vision</span>
+                        <span>Image Processing</span>
+                        <span>Python</span>
+                    </div>
                 </div>
             </section>
 
@@ -257,37 +302,6 @@ document.getElementById("themeToggle").addEventListener("click", () => {
         </div>
         
     </main>
-    <div id="demoModal" class="modal">
-        <div class="card modal-content">
-            <div class="window-bar">
-                <span></span><span></span><span></span>
-            </div>
-
-            <h2>Form Validation</h2>
-
-            <form id="demoForm">
-                <label>Name</label>
-                <input type="text" id="name" />
-                <small id="nameError" class="error"></small>
-
-                <label>Contact Number</label>
-                <input type="text" id="phone" />
-                <small id="phoneError" class="error"></small>
-
-                <label>Email</label>
-                <input type="email" id="email" />
-                <small id="emailError" class="error"></small>
-
-                <label>Profession</label>
-                <input type="text" />
-
-                <div class="form-actions">
-                    <button type="submit" class="btn">Submit</button>
-                    <button type="button" class="btn" onclick="closeForm()">Cancel</button>
-                </div>
-            </form>
-        </div>
-    </div>
 
     <footer class="site-footer">
         <p>© 2026 Naman Agarwal · Portfolio</p>
